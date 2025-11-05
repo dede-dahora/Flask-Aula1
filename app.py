@@ -13,3 +13,8 @@ def info():
     modulo = "css"
     aula = '7'
     return f"<h1>Modulo: {modulo}</h1><h1>Aula: {aula}</h1>"
+@app.get("/bemvindo/<usuario>") 
+
+def bemvindo(usuario):
+
+   return f"<h1>Bem-vindo, {usuario.capitalize()}!<h1>"
