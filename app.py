@@ -18,3 +18,10 @@ def info():
 def bemvindo(usuario):
 
    return f"<h1>Bem-vindo, {usuario.capitalize()}!<h1>"
+from flask import Flask, redirect
+
+@app.get("/home") 
+
+def home(): 
+
+  return redirect("/")
